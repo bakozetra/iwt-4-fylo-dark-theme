@@ -1,0 +1,1 @@
+{"version":3,"sources":["scss\\_default.scss"],"names":[],"mappings":"AAAA;EACE;EACA;;;AAEF;EACE;;;AAEF;EACE","file":"scss.6b84482b.css","sourceRoot":"..","sourcesContent":["body {\r\n  width: 100%;\r\n  margin: 0;\r\n}\r\na {\r\n  text-decoration: none;\r\n}\r\nli {\r\n  list-style: none;\r\n}"]}
