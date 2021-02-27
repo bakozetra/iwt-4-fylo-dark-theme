@@ -1,0 +1,20 @@
+footer {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  address {
+    display: block;
+    a {
+      display: list-item;
+    }
+  a[href^="tel"]::before {
+      content: url(../images/icon-phone.svg);
+      margin-right: 1rem;
+  }
+  
+  a[href^="mailto"]::before {
+      content: url(../images/icon-email.svg);
+      margin-right: 1rem;
+    }
+  }
+}

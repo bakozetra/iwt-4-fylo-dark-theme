@@ -1,14 +1,154 @@
 body {
   width: 100%;
   margin: 0;
+  background-color: #181f2a;
+  color: white;
 }
 
 a {
   text-decoration: none;
 }
 
+ul {
+  padding: 0;
+}
+
 li {
   list-style: none;
+}
+
+body > header {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+body > header img {
+  width: 100px;
+}
+body > header ul {
+  display: block;
+}
+body > header ul li {
+  display: inline;
+  margin-left: 1rem;
+}
+body > header ul li a {
+  color: white;
+}
+
+main article {
+  text-align: center;
+}
+main article header {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+main article header img {
+  width: 100%;
+}
+main article header h2 {
+  font-size: 28px;
+}
+main article button {
+  background-color: #339ecc;
+  border: none;
+  border-radius: 30px;
+  width: 300px;
+  height: 55px;
+  text-align: center;
+  color: white;
+}
+
+main article article {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4rem;
+}
+main article article u {
+  color: #339ecc;
+}
+
+article section {
+  text-align: start;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+article section img {
+  width: 100%;
+}
+
+article nav {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+article nav li {
+  background-color: #1c2431;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column-reverse;
+  text-align: start;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+article nav li img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+article nav li .comment {
+  display: block;
+}
+article nav li .comment div {
+  display: inline-block;
+}
+
+.get-access {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #1c2431;
+  text-align: center;
+  padding: 0.5rem;
+  padding-bottom: 2rem;
+  border-radius: 10px;
+}
+.get-access p {
+  width: 85%;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+.get-access input {
+  width: 300px;
+  height: 50px;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+}
+
+footer {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer address {
+  display: block;
+}
+footer address a {
+  display: list-item;
+}
+footer address a[href^=tel]::before {
+  content: url(/icon-phone.cc84a2ca.svg);
+  margin-right: 1rem;
+}
+footer address a[href^=mailto]::before {
+  content: url(/icon-email.e16cbdce.svg);
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=/scss.6b84482b.css.map */
