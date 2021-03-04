@@ -11,3 +11,47 @@ main {
         }
     }
   }
+
+  @media(min-width : 375px) {
+     .content {
+       display: grid;
+       grid-template-areas: "access security"
+                            "collaborate file";
+       width: 60%;
+       margin: auto;
+       article {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         h3 {
+           margin: 0;
+         }
+        //  img {
+        //    width: 40%;
+        //  }
+       }
+      .access {
+        grid-area: access;
+      }
+      .security {
+        grid-area: security;
+      }
+      .collaborate {
+        grid-area: collaborate;
+      }
+      .file {
+        grid-area:  file;
+      }
+     }
+     .productive {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       img {
+         width: 50%;
+       }
+       div {
+         width: 40%;
+       }
+     }
+  }

@@ -19,5 +19,20 @@
       border-radius: 30px;
       margin-bottom : 1rem;
     };
-    
   } 
+
+  @media(min-width : 375px) {
+    .get-access {
+      width: 60%;
+      p {
+        width: 70%;
+      }
+      input {
+        width: 400px;
+      }
+      button {
+        width: 200px;
+      }
+    }
+
+  }

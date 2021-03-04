@@ -22,8 +22,19 @@ article {
           display: inline-block;
         }
       }
-
-     
     }
   }
+}
+@media (min-width : 375px) {
+    article {
+      nav {
+        ul {
+          display: flex;
+          justify-content: space-between;
+        li {
+         margin-right: 1rem;
+        }
+        }
+      }
+    }
 }

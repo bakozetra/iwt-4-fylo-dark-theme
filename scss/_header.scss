@@ -18,3 +18,16 @@ body > header {
     }
   }
 }
+@media(min-width : 375px) {
+  body > header {
+    img {
+      width: 20%;
+    }
+    ul {
+      li {
+        font-size: 30px;
+        margin-left: 3rem;
+      }
+    }
+  }
+}

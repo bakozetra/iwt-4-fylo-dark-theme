@@ -38,6 +38,15 @@ body > header ul li a {
   color: white;
 }
 
+@media (min-width: 375px) {
+  body > header img {
+    width: 20%;
+  }
+  body > header ul li {
+    font-size: 30px;
+    margin-left: 3rem;
+  }
+}
 main article {
   text-align: center;
 }
@@ -63,6 +72,23 @@ main article button {
   color: white;
 }
 
+@media (min-width: 375px) {
+  main > article header {
+    width: 50%;
+  }
+  main > article header img {
+    width: 100%;
+    padding-top: 4rem;
+  }
+  main > article header h2 {
+    font-size: 40px;
+  }
+  main > article header p {
+    width: 62%;
+    margin: auto;
+    padding-bottom: 2rem;
+  }
+}
 main article article {
   width: 90%;
   margin-left: auto;
@@ -73,6 +99,46 @@ main article article u {
   color: #339ecc;
 }
 
+@media (min-width: 375px) {
+  .content {
+    display: grid;
+    grid-template-areas: "access security" "collaborate file";
+    width: 60%;
+    margin: auto;
+  }
+  .content article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content article h3 {
+    margin: 0;
+  }
+  .content .access {
+    grid-area: access;
+  }
+  .content .security {
+    grid-area: security;
+  }
+  .content .collaborate {
+    grid-area: collaborate;
+  }
+  .content .file {
+    grid-area: file;
+  }
+
+  .productive {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .productive img {
+    width: 50%;
+  }
+  .productive div {
+    width: 40%;
+  }
+}
 article section {
   text-align: start;
   width: 90%;
@@ -109,6 +175,15 @@ article nav li .comment div {
   display: inline-block;
 }
 
+@media (min-width: 375px) {
+  article nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  article nav ul li {
+    margin-right: 1rem;
+  }
+}
 .get-access {
   width: 90%;
   margin-right: auto;
@@ -131,24 +206,70 @@ article nav li .comment div {
   margin-bottom: 1rem;
 }
 
+@media (min-width: 375px) {
+  .get-access {
+    width: 60%;
+  }
+  .get-access p {
+    width: 70%;
+  }
+  .get-access input {
+    width: 400px;
+  }
+  .get-access button {
+    width: 200px;
+  }
+}
 footer {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 4rem;
 }
-footer address {
+footer a {
+  color: white;
+}
+footer .address {
   display: block;
 }
-footer address a {
+footer .address a {
   display: list-item;
+  color: white;
+  padding-bottom: 1.5rem;
 }
-footer address a[href^=tel]::before {
+footer .address .location {
+  width: 89%;
+  margin-left: auto;
+}
+footer .address a[href^=loaction]::before {
+  content: url(/icon-location.fa295aa5.svg);
+  margin-right: 1rem;
+  position: absolute;
+  left: 1rem;
+}
+footer .address a[href^=tel]::before {
   content: url(/icon-phone.cc84a2ca.svg);
   margin-right: 1rem;
 }
-footer address a[href^=mailto]::before {
+footer .address a[href^=mailto]::before {
   content: url(/icon-email.e16cbdce.svg);
   margin-right: 1rem;
+}
+
+@media (min-width: 375px) {
+  footer nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer nav .address .location {
+    width: 100%;
+    margin-left: 0;
+  }
+  footer nav .address a[href^=loaction]::before {
+    margin-right: 1rem;
+    position: inherit;
+  }
 }
 
 /*# sourceMappingURL=/scss.6b84482b.css.map */

@@ -24,3 +24,22 @@ main {
     }
   }
 }
+@media(min-width:375px) {
+ main > article {
+    header{
+      width: 50%;
+      img {
+        width: 100%;
+        padding-top: 4rem;
+      }
+      h2 {
+        font-size: 40px;
+      }
+      p {
+        width: 62%;
+        margin: auto;
+        padding-bottom: 2rem;
+      }
+    }
+  }
+}
